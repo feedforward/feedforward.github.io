@@ -210,41 +210,540 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-	<tr onmouseout="AdaDep_stop()" onmouseover="AdaDep_start()" >
+	<tr onmouseout="self_drive_car_stop()" onmouseover="self_drive_car_start()" >
 	  <td width="25%">
 		<div class="one">
-		<div class="two" id = 'AdaDepth_image'><img src='assets/images/AdaDep_depth.png'></div>
-		<img src='assets/images/AdaDep_rgb.png'>
+		<div class="two" id = 'self_drive_car_image'><img src='assets/images/self_drive_car_after.png'></div>
+		<img src='assets/images/self_drive_car_before.png'>
 		</div>
 		<script type="text/javascript">
-		function AdaDep_start() {
-		document.getElementById('AdaDep_image').style.opacity = "1";
+		function self_drive_car_start() {
+		document.getElementById('self_drive_car_image').style.opacity = "1";
 		}
-		function AdaDep_stop() {
-		document.getElementById('AdaDep_image').style.opacity = "0";
+		function self_drive_car_stop() {
+		document.getElementById('self_drive_car_image').style.opacity = "0";
 		}
-		AdaDepth_stop()
+		self_drive_carth_stop()
 		</script>
 	  </td>
 
 	  <td valign="top" width="75%">
-	  <a href="https://arxiv.org/abs/1803.01599">
-	  <papertitle>AdaDepth: Unsupervised Content Congruent Adaptation for Depth Estimation</papertitle>
+	  <a href="">
+	  <papertitle>Self Driving Car Simulation using a RL agent.</papertitle>
 	  </a>
 	  <br>
-		  J Kundu<strong>*</strong>,
-	  <a href="http://val.serc.iisc.ernet.in/valweb/people/krishna"><strong>Phani Krishna Uppala*</strong></a>,
-	  A Pahuja,
-	  <a href="http://www.serc.iisc.ernet.in/~venky/">V Babu</a>.
-	  
-		<em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font> <strong>*</strong> Equal Contribution.<br>
-		<a href="AdaDepth2018.bib">bibtex</a>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
 		<p></p>
-		<p> An unsupervised domain adaptation strategy for the pixel-wise regression task of monocular depth estimation.</p>
+		<p> Deep Q network (DQN) agent is trained to drive a simulated car, agent is penalized for going off-track or crashing and rewarded for on-track high speeds. Car speed, game screen, and collision state are collected from emulator, and actions given are pressing right key, left key, brake key, accelerate key.</p>
 	  </td>
 	</tr>
 
-	 </table>
+	<tr onmouseout="graph_conv_stop()" onmouseover="graph_conv_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'graph_conv_image'><img src='assets/images/graph_conv_after.png'></div>
+		<img src='assets/images/graph_conv_before.png'>
+		</div>
+		<script type="text/javascript">
+		function graph_conv_start() {
+		document.getElementById('graph_conv_image').style.opacity = "1";
+		}
+		function graph_conv_stop() {
+		document.getElementById('graph_conv_image').style.opacity = "0";
+		}
+		graph_convth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Graph Convolutions for the Semi supervised Classification.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Graphs are ubiquitous data structures, recently research community has taken up the challenge of generalizing the well performing CNNs to graph structures, taking inspiration from other works, this project involved implementing variants of the regularization loss for GCNs.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="stick_walk_stop()" onmouseover="stick_walk_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'stick_walk_image'><img src='assets/images/stick_walk_after.png'></div>
+		<img src='assets/images/stick_walk_before.png'>
+		</div>
+		<script type="text/javascript">
+		function stick_walk_start() {
+		document.getElementById('stick_walk_image').style.opacity = "1";
+		}
+		function stick_walk_stop() {
+		document.getElementById('stick_walk_image').style.opacity = "0";
+		}
+		stick_walkth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Simulated Human stick figure trained to walk using a RL agent.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Using the Actor-Critic method, where policy gradient method is trust region policy optimization, and the value function estimate is by generalized advantage estimation, a human stick figure is trained to walk.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="chat_bot_stop()" onmouseover="chat_bot_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'chat_bot_image'><img src='assets/images/chat_bot_after.png'></div>
+		<img src='assets/images/chat_bot_before.png'>
+		</div>
+		<script type="text/javascript">
+		function chat_bot_start() {
+		document.getElementById('chat_bot_image').style.opacity = "1";
+		}
+		function chat_bot_stop() {
+		document.getElementById('chat_bot_image').style.opacity = "0";
+		}
+		chat_botth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Chatbot built using tensorflow.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Using the sequence to sequence model, one lstm encoder is used to read the input sequence,  this encoded representation is used by lstm decoder to generate output sequence.</p>
+	  </td>
+	</tr>
+	<tr onmouseout="watson_conv_stop()" onmouseover="watson_conv_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'watson_conv_image'><img src='assets/images/watson_conv_after.png'></div>
+		<img src='assets/images/watson_conv_before.png'>
+		</div>
+		<script type="text/javascript">
+		function watson_conv_start() {
+		document.getElementById('watson_conv_image').style.opacity = "1";
+		}
+		function watson_conv_stop() {
+		document.getElementById('watson_conv_image').style.opacity = "0";
+		}
+		watson_convth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Chatbot built using IBM Watson conversation.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Leveraging the IBM Cloud services and Watson conversation which is trained on huge amount of data, a chatbot is developed using the custom trained natural language classifier, and integrating with Dialog service to make appropriate decisions.</p>
+	  </td>
+	</tr>	<tr onmouseout="block_chain_stop()" onmouseover="block_chain_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'block_chain_image'><img src='assets/images/block_chain_after.png'></div>
+		<img src='assets/images/block_chain_before.png'>
+		</div>
+		<script type="text/javascript">
+		function block_chain_start() {
+		document.getElementById('block_chain_image').style.opacity = "1";
+		}
+		function block_chain_stop() {
+		document.getElementById('block_chain_image').style.opacity = "0";
+		}
+		block_chainth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Blockchain to have a transaction validation.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Transaction pool is created between imaginary people, hash function is created to give fingerprint to transactions, then used a set of state transition rules to create blocks, implemented mechanisms for validating a transaction, block and full chain. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="fea_vis_stop()" onmouseover="fea_vis_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'fea_vis_image'><img src='assets/images/fea_vis_after.png'></div>
+		<img src='assets/images/fea_vis_before.png'>
+		</div>
+		<script type="text/javascript">
+		function fea_vis_start() {
+		document.getElementById('fea_vis_image').style.opacity = "1";
+		}
+		function fea_vis_stop() {
+		document.getElementById('fea_vis_image').style.opacity = "0";
+		}
+		fea_visth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Feature visualization for the convolutional neural networks.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Previously deep neural networks were considered as black box structures, to alleviate this research community proposed many visualization techniques, to gain further insights, a class level feature visualization is implemented, these class level visualizations showed structures which are present in real data samples remarkably.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="depth_style_stop()" onmouseover="depth_style_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'depth_style_image'><img src='assets/images/depth_style_after.png'></div>
+		<img src='assets/images/depth_style_before.png'>
+		</div>
+		<script type="text/javascript">
+		function depth_style_start() {
+		document.getElementById('depth_style_image').style.opacity = "1";
+		}
+		function depth_style_stop() {
+		document.getElementById('depth_style_image').style.opacity = "0";
+		}
+		depth_styleth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Depth - aware style transfer.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Style transfer using Gram matrices opened a new venue in deep learning, but the 3D perspective of original image is not preserved in stylized images, to overcome this recently depth aware loss is used, to further improve on this, a GAN based discriminator is trained to differentiate between the depth images of original images and depth images of stylized images. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="anomaly_detect_stop()" onmouseover="anomaly_detect_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'anomaly_detect_image'><img src='assets/images/anomaly_detect_after.png'></div>
+		<img src='assets/images/anomaly_detect_before.png'>
+		</div>
+		<script type="text/javascript">
+		function anomaly_detect_start() {
+		document.getElementById('anomaly_detect_image').style.opacity = "1";
+		}
+		function anomaly_detect_stop() {
+		document.getElementById('anomaly_detect_image').style.opacity = "0";
+		}
+		anomaly_detectth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Anomaly detection in human movement patterns.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Anomaly detected has very important security implications, a neural network based anomaly detection model is trained on the video data. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="top_view_stop()" onmouseover="top_view_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'top_view_image'><img src='assets/images/top_view_after.png'></div>
+		<img src='assets/images/top_view_before.png'>
+		</div>
+		<script type="text/javascript">
+		function top_view_start() {
+		document.getElementById('top_view_image').style.opacity = "1";
+		}
+		function top_view_stop() {
+		document.getElementById('top_view_image').style.opacity = "0";
+		}
+		top_viewth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Top view estimation of indoor scenes for robotic navigation.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Bird’s eye view of a room gives a very easy navigation protocols for robots, compared to the first person view, but videos collected using cameras are in first person view, so a neural network based model is trained to get top view from the RGBD image. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="hyperspectral_hierar_stop()" onmouseover="hyperspectral_hierar_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'hyperspectral_hierar_image'><img src='assets/images/hyperspectral_hierar_after.png'></div>
+		<img src='assets/images/hyperspectral_hierar_before.png'>
+		</div>
+		<script type="text/javascript">
+		function hyperspectral_hierar_start() {
+		document.getElementById('hyperspectral_hierar_image').style.opacity = "1";
+		}
+		function hyperspectral_hierar_stop() {
+		document.getElementById('hyperspectral_hierar_image').style.opacity = "0";
+		}
+		hyperspectral_hierarth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Hyperspectral image segmentation using semi supervised hierarchical clustering.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> In biomedical image segmentation often the relationships among different cells is important, so just one label per pixel does not convey the full picture, so hierarchical clustering is used, but the hierarchical clustering is very expensive in memory and in computation, to overcome this a two stage clustering is used, this encapsulates the rich information of hierarchical clustering and computational efficiency of traditional methods.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="hyperspectral_cnn_stop()" onmouseover="hyperspectral_cnn_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'hyperspectral_cnn_image'><img src='assets/images/hyperspectral_cnn_after.png'></div>
+		<img src='assets/images/hyperspectral_cnn_before.png'>
+		</div>
+		<script type="text/javascript">
+		function hyperspectral_cnn_start() {
+		document.getElementById('hyperspectral_cnn_image').style.opacity = "1";
+		}
+		function hyperspectral_cnn_stop() {
+		document.getElementById('hyperspectral_cnn_image').style.opacity = "0";
+		}
+		hyperspectral_cnnth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Hyperspectral image segmentation using convolutional neural networks with spectral and spatial features.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p>In hyperspectral images the information is encoded in spectral domain and in the spatial domain, to exploit all the available information, a two streamed CNN with joint final fully connected layer is used to predict the segmentation. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="face_rec_stop()" onmouseover="face_rec_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'face_rec_image'><img src='assets/images/face_rec_after.png'></div>
+		<img src='assets/images/face_rec_before.png'>
+		</div>
+		<script type="text/javascript">
+		function face_rec_start() {
+		document.getElementById('face_rec_image').style.opacity = "1";
+		}
+		function face_rec_stop() {
+		document.getElementById('face_rec_image').style.opacity = "0";
+		}
+		face_recth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Face recognition and tracking by using a surveillance video from an UAV.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Using the surveillance videos from the UAVs the cascade of various features are extracted, starting with the skin color segmentation, followed by viola jones feature extraction and others, finally a SVM classifier is used to detect the face of the subjects.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="rayleigh_ch_stop()" onmouseover="rayleigh_ch_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'rayleigh_ch_image'><img src='assets/images/rayleigh_ch_after.png'></div>
+		<img src='assets/images/rayleigh_ch_before.png'>
+		</div>
+		<script type="text/javascript">
+		function rayleigh_ch_start() {
+		document.getElementById('rayleigh_ch_image').style.opacity = "1";
+		}
+		function rayleigh_ch_stop() {
+		document.getElementById('rayleigh_ch_image').style.opacity = "0";
+		}
+		rayleigh_chth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Establishing the optimum decision rule for ML detector when the transmitted signal is corrupted by Rayleigh faded channel.</papertitle>
+	  </a>
+	  <br>
+	  <a href="">Code</a>,
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Establishing the optimum decision rule for ML detector when the transmitted signal is corrupted by Rayleigh faded channel with AWGN or Log-normal or Rayleigh or Rician interference for MPSK and MQAM modulation schemes.</p>
+	  </td>
+	</tr>
+
+  </table>
+
+	  <!--Start of the section Research-->
+	  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	  <tr>
+		<td width="100%" valign="middle">
+		  <heading>Products</heading>
+		  <p>
+		  Some of the products over the years along with my collegues.
+		  </p>
+		</td>
+	  </tr>
+	  </table>
+	  <!--Start of the list of papers-->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+
+
+	<tr onmouseout="rf_rec_stop()" onmouseover="rf_rec_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'rf_rec_image'><img src='assets/images/rf_rec_after.png'></div>
+		<img src='assets/images/rf_rec_before.png'>
+		</div>
+		<script type="text/javascript">
+		function rf_rec_start() {
+		document.getElementById('rf_rec_image').style.opacity = "1";
+		}
+		function rf_rec_stop() {
+		document.getElementById('rf_rec_image').style.opacity = "0";
+		}
+		rf_recth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>2.4GHZ RF receiver  </papertitle>
+	  </a>
+	  <br>
+	  <a href="">Blog</a>.
+		<p></p>
+		<p>Design of Radio frequency 2.4Ghz receiver, PCB layout with  LNA, MIXER and ANTENNA is designed in eagle and fabricated. </p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="flappy_bird_stop()" onmouseover="flappy_bird_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'flappy_bird_image'><img src='assets/images/flappy_bird_after.png'></div>
+		<img src='assets/images/flappy_bird_before.png'>
+		</div>
+		<script type="text/javascript">
+		function flappy_bird_start() {
+		document.getElementById('flappy_bird_image').style.opacity = "1";
+		}
+		function flappy_bird_stop() {
+		document.getElementById('flappy_bird_image').style.opacity = "0";
+		}
+		flappy_birdth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Game - Digital Flappy Bird </papertitle>
+	  </a>
+	  <br>
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Developed a synthesizable code for Flappy bird game in Verilog using Quartus software and burned the program in krypton CPLD Kit using JTAG, game and score are displayed on led matrix whereas the controller for users are on the board itself.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="air_hockey_stop()" onmouseover="air_hockey_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'air_hockey_image'><img src='assets/images/air_hockey_after.png'></div>
+		<img src='assets/images/air_hockey_before.png'>
+		</div>
+		<script type="text/javascript">
+		function air_hockey_start() {
+		document.getElementById('air_hockey_image').style.opacity = "1";
+		}
+		function air_hockey_stop() {
+		document.getElementById('air_hockey_image').style.opacity = "0";
+		}
+		air_hockeyth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Game - Air hockey </papertitle>
+	  </a>
+	  <br>
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> Developed an LED simulation of the game Air Hockey on an (8*9) LED grid using 8085 microprocessor and logic gates, Dyna-kit, Interfaces like 8255, Interrupts, Masks, Memory registers are used in coordination to design the game.</p>
+	  </td>
+	</tr>
+
+	<tr onmouseout="mov_target_stop()" onmouseover="mov_target_start()" >
+	  <td width="25%">
+		<div class="one">
+		<div class="two" id = 'mov_target_image'><img src='assets/images/mov_target_after.png'></div>
+		<img src='assets/images/mov_target_before.png'>
+		</div>
+		<script type="text/javascript">
+		function mov_target_start() {
+		document.getElementById('mov_target_image').style.opacity = "1";
+		}
+		function mov_target_stop() {
+		document.getElementById('mov_target_image').style.opacity = "0";
+		}
+		mov_targetth_stop()
+		</script>
+	  </td>
+
+	  <td valign="top" width="75%">
+	  <a href="">
+	  <papertitle>Moving target tracking automobile via shortest path using RFIDS </papertitle>
+	  </a>
+	  <br>
+	  <a href="">Blog</a>.
+		<p></p>
+		<p> The tracking is done with the help of RFID tags attached (beforehand) to the proposed targets, automobile would run by an algorithm which takes real time inputs from the tags and uses particle filtering techniques to correctly estimate the shortest “path of approach” to the target. </p>
+	  </td>
+	</tr>
+
+  </table>
 	  <!--End of Content-->
 
 
